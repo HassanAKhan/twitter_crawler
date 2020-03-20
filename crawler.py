@@ -1,4 +1,3 @@
-
 import tweepy
 import pymongo
 import datetime
@@ -13,7 +12,7 @@ class StreamListener(tweepy.StreamListener):
     def on_status(self, status):
 
 
-
+        #The name of the file needs to be changed when switching from filtering to streaming
         with open('stream_out.csv', "a", encoding='utf-8') as f:
 
 

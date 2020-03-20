@@ -16,6 +16,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS
 import seaborn as sns
 
+#To run just type in the path of the file and run
 df = pd.read_csv('stream_out.csv')
 
 
@@ -24,8 +25,6 @@ df = pd.read_csv('stream_out.csv')
 def clean_column(data):
     if data is not None:
 
-        # exclusions = ['RE:', 'Re:', 're:']
-        # exclusions = '|'.join(exclusions)
         data = data.lower()
 
         data = re.sub('rt', '', data)
